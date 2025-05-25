@@ -13,9 +13,6 @@ modalCloseOverlay.addEventListener('click', modalCloseFunc);
 modalCloseBtn.addEventListener('click', modalCloseFunc);
 
 
-
-
-
 // notification toast variables
 const notificationToast = document.querySelector('[data-toast]');
 const toastCloseBtn = document.querySelector('[data-toast-close]');
@@ -24,9 +21,6 @@ const toastCloseBtn = document.querySelector('[data-toast-close]');
 toastCloseBtn.addEventListener('click', function () {
   notificationToast.classList.add('closed');
 });
-
-
-
 
 
 // mobile menu variables
@@ -52,8 +46,6 @@ for (let i = 0; i < mobileMenuOpenBtn.length; i++) {
   overlay.addEventListener('click', mobileMenuCloseFunc);
 
 }
-
-
 
 
 
@@ -86,3 +78,20 @@ for (let i = 0; i < accordionBtn.length; i++) {
   });
 
 }
+
+
+  // Place this script at the end of your body or in your JS file
+  const btn = document.getElementById('wishlist-btn');
+  const icon = document.getElementById('wishlist-icon');
+  let active = false;
+
+  btn.addEventListener('click', function() {
+    active = !active;
+    if (active) {
+      icon.setAttribute('name', 'heart');
+      icon.style.color = 'red'; // Optional: change color
+    } else {
+      icon.setAttribute('name', 'heart-outline');
+      icon.style.color = ''; // Reset color
+    }
+  });

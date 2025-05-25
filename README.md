@@ -4,8 +4,7 @@ Arjay is a fully responsive ecommerce website, maximum compatiblities in all mob
 
 ## Demo
 
-![Arjay Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![Arjay Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+![Arjay Desktop Demo](./website-demo-image/Desktop_preview.png" Desktop Demo")
 
 ## Prerequisites
 
@@ -17,6 +16,17 @@ Before you begin, ensure you have met the following requirements:
 
 If you want to contact me you can reach me at [Twitter](https://www.twitter.com/Pat3ick390s).
 
-## License
+## E-commerce Website Products:
+* Footwears
+* Bags
+* Saloon gadgets
+* Polos
+* Crop tops
+* Laundry baskets
+* Shoe racks
+* Corner racks
+* Weight gain syrup
+* Hips,butts and boobs increment syrup
+* Jewelries
 
 This project is **free to use** and does not contains any license.

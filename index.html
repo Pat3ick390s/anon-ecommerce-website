@@ -25,6 +25,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
+    <!-- ...existing code... -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- ...existing code... -->
+
 </head>
 
 <body>
@@ -135,7 +140,7 @@
           </li>
 
            <li>
-            <a href="https://wa.link/zbve1o" class="social-link">
+            <a href="https://wa.link/131xdl" class="social-link">
               <ion-icon name="logo-whatsapp"></ion-icon>
             </a>
           </li>
@@ -242,7 +247,7 @@
               <ul class="dropdown-panel-list">
 
                 <li class="menu-title">
-                  <a href="#">Electronics</a>
+                  <a href="#" class="category-link" data-filter="electronics">Electronics</a>
                 </li>
 
                 <li class="panel-list-item">
@@ -277,7 +282,7 @@
               <ul class="dropdown-panel-list">
 
                 <li class="menu-title">
-                  <a href="#">Men's</a>
+                  <a href="#" class="category-link" data-filter="men">Men's</a>
                 </li>
 
                 <li class="panel-list-item">
@@ -311,7 +316,7 @@
               <ul class="dropdown-panel-list">
 
                 <li class="menu-title">
-                  <a href="#">Women's</a>
+                  <a href="#" class="category-link" data-filter="women">Women's</a>
                 </li>
 
                 <li class="panel-list-item">
@@ -510,7 +515,7 @@
       </button>
 
       <button class="action-btn">
-        <ion-icon name="heart-outline"></ion-icon>
+        <ion-icon name="heart-outline" id="wishlist-icon"></ion-icon>
 
         <span class="count">0</span>
       </button>
@@ -551,11 +556,11 @@
           <ul class="submenu-category-list" data-accordion>
 
             <li class="submenu-category">
-              <a href="shirt" class="submenu-title">Polo Shirts</a>
+              <a href="" class="submenu-title">Polo Shirts</a>
             </li>
 
             <li class="submenu-category">
-              <a href="short" class="submenu-title">Shorts</a>
+              <a href="" class="submenu-title">Shorts</a>
             </li>
 
             <li class="submenu-category">
@@ -1076,21 +1081,21 @@
                 <ul class="sidebar-submenu-category-list" data-accordion>
 
                   <li class="sidebar-submenu-category">
-                    <a href="#shrit" class="sidebar-submenu-title">
+                    <a href=""class="category-link" data-filter="men">
                       <p class="product-name">Polo Shirt</p>
-                      <data value="7" class="stock" title="Available Stock">7</data>
+                      <data value="1" class="stock" title="Available Stock">7</data>
                     </a>
                   </li>
 
                   <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
+                    <a href="#" class="category-link" data-filter="men">
                       <p class="product-name">Shorts</p>
                       <data value="9" class="stock" title="Available Stock">9</data>
                     </a>
                   </li>
 
                   <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
+                    <a href="#" class="category-link" data-filter="men" data-filter="men">
                       <p class="product-name">Jacket</p>
                       <data value="2" class="stock" title="Available Stock">2</data>
                     </a>
@@ -1284,7 +1289,7 @@
                   </li>
 
                   <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
+                    <a href="#" class="category-link" data-filter="women">
                       <p class="product-name">Sunscreen</p>
                       <data value="16" class="stock" title="Available Stock">15</data>
                     </a>
@@ -2367,7 +2372,7 @@
 
             <div class="product-grid">
 
-              <div class="showcase">
+              <div class="showcase" data-category="men">
 
                 <div class="showcase-banner">
 
@@ -2378,12 +2383,12 @@
 
                   <div class="showcase-actions">
 
-                    <button class="btn-action">
-                      <ion-icon name="heart-outline" class="countdown"></ion-icon>
+                    <button class="btn-action" id="wishlist-btn">
+                      <ion-icon name="heart-outline" id="wishlist-icon" class="countdown"></ion-icon>
                     </button>
 
                     <button class="btn-action">
-                      <a href="https://web.facebook.com/photo/?fbid=2710412219308540&set=pb.100010193650777.-2207520000"><ion-icon name="eye-outline"></ion-icon></a>
+                      <a href="https://web.facebook.com/photo/?fbid=2710412219308540&set=pb.100010193650777.-2207520000" class="category-link" data-filter="men"><ion-icon name="eye-outline"></ion-icon></a>
                       
                     </button>
 
@@ -2403,7 +2408,7 @@
 
                   <a href="https://wa.link/zbve1o" class="showcase-category">Shorts</a>
 
-                  <a href="https://wa.link/zbve1o">
+                  <a class="category-link" data-filter="men" href="https://wa.link/zbve1o">
                     <h3 class="showcase-title">Short.</h3>
                   </a>
 
@@ -2426,7 +2431,7 @@
 
               </div>
 
-              <div class="showcase">
+              <div class="showcase" data-category="women">
               
                 <div class="showcase-banner">
                   <img src="./assets/images/products/bag-0.1-removebg-preview.png" alt="Pure Garment Dyed Cotton Shirt" class="product-img default"
@@ -2457,7 +2462,7 @@
                 </div>
               
                 <div class="showcase-content">
-                  <a href="https://wa.link/131xdl" class="showcase-category">Hand Bag</a>
+                  <a href="https://wa.link/131xdl" class="category-link" data-filter="women">Hand Bag</a>
               
                   <h3>
                     <a href="https://wa.link/131xdl" class="showcase-title">louis Vuitton tote bags</a>
@@ -2481,7 +2486,7 @@
               
               </div>
 
-              <div class="showcase">
+              <div class="showcase" data-category="women">
               
                 <div class="showcase-banner">
                   <img src="./assets/images/products/shoe-0.1-removebg-preview.png" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default"
@@ -2513,7 +2518,7 @@
                   <a href="https://wa.link/131xdl" class="showcase-category">High Heels</a>
               
                   <h3>
-                    <a href="https://wa.link/131xdl" class="showcase-title">Footwear</a>
+                    <a href="https://wa.link/131xdl" class="category-link" data-filter="women">Footwear</a>
                   </h3>
               
                   <div class="showcase-rating">
@@ -2534,7 +2539,7 @@
               
               </div>
 
-              <div class="showcase">
+              <div class="showcase" data-category="women">
               
                 <div class="showcase-banner">
                   <img src="./assets/images/products/jewellery-0.6-removebg-preview.png" alt="Black Floral Wrap Midi Skirt" class="product-img default"
@@ -2568,7 +2573,7 @@
                   <a href="https://wa.link/131xdl" class="showcase-category">Ear Rings</a>
               
                   <h3>
-                    <a href="https://wa.link/131xdl" class="showcase-title">Gold & Diamond ear ring</a>
+                    <a href="https://wa.link/131xdl" class="showcase-title" data-filter="women">Gold & Diamond ear ring</a>
                   </h3>
               
                   <div class="showcase-rating">
@@ -2589,7 +2594,7 @@
               
               </div>
 
-              <div class="showcase">
+              <div class="showcase" data-category="women">
               
                 <div class="showcase-banner">
                   <img src="./assets/images/products/shirt_Sleeveless-0.1-removebg-preview.png" alt="Casual Men's Brown shoes" class="product-img default"
@@ -2621,7 +2626,7 @@
                   <a href="https://wa.link/131xdl" class="showcase-category">Sleeveless </a>
               
                   <h3>
-                    <a href="https://wa.link/131xdl" class="showcase-title">Sleeveless Tan Tops</a>
+                    <a href="https://wa.link/131xdl" class="showcase-title" data-filter="women">Sleeveless Tan Tops</a>
                   </h3>
               
                   <div class="showcase-rating">
@@ -2642,7 +2647,7 @@
               
               </div>
 
-              <div class="showcase">
+              <div class="showcase" data-category="electronics">
               
                 <div class="showcase-banner">
                   <img src="./assets/images/products/Vacuum_flask_2-removebg-preview.png" alt="Pocket Watch Leather Pouch" class="product-img default"
@@ -2675,7 +2680,7 @@
                   <a href="https://wa.link/131xdl" class="showcase-category">Vacuum flask</a>
               
                   <h3>
-                    <a href="https://wa.link/131xdl" class="showcase-title">Stainless Steel Double wall Insulation Water Bottle.</a>
+                    <a href="https://wa.link/131xdl" class="showcase-title" data-filter="electronics">Stainless Steel Double wall Insulation Water Bottle.</a>
                   </h3>
               
                   <div class="showcase-rating">
@@ -2696,7 +2701,7 @@
               
               </div>
 
-              <div class="showcase">
+              <div class="showcase" data-category="electronics">
               
                 <div class="showcase-banner">
                   <img src="./assets/images/products/watch-1.jpg" alt="Smart watche Vital Plus" class="product-img default"
@@ -2726,7 +2731,7 @@
                   <a href="https://wa.link/131xdl" class="showcase-category">watches</a>
               
                   <h3>
-                    <a href="https://wa.link/131xdl" class="showcase-title">Smart watche Vital Plus</a>
+                    <a href="https://wa.link/131xdl" class="showcase-title" data-filter="electronics">Smart watche Vital Plus</a>
                   </h3>
               
                   <div class="showcase-rating">
@@ -2748,7 +2753,7 @@
               </div>
 
 
-                <div class="showcase">
+                <div class="showcase" data-category="men">
               
                 <div class="showcase-banner">
                   <img src="./assets/images/products/watch-5-removebg-preview.png" alt="Smart watche Vital Plus" class="product-img default"
@@ -2779,7 +2784,7 @@
                   <a href="https://wa.link/131xdl" class="showcase-category">watches</a>
               
                   <h3>
-                    <a href="https://wa.link/131xdl" class="showcase-title">Hublot Big Bang</a>
+                    <a href="https://wa.link/131xdl" class="showcase-title" data-filter="men">Hublot Big Bang</a>
                   </h3>
               
                   <div class="showcase-rating">
@@ -2801,7 +2806,7 @@
               </div>
 
 
-              <div class="showcase">
+              <div class="showcase" data-category="women">
               
                 <div class="showcase-banner">
                   <img src="./assets/images/products/bag-0.9-removebg-preview.png" alt="Womens Party Wear Shoes" class="product-img default"
@@ -2835,7 +2840,7 @@
                   <a href="https://wa.link/131xdl" class="showcase-category">Hand Bags</a>
               
                   <h3>
-                    <a href="https://wa.link/131xdl" class="showcase-title">Womens Handbag</a>
+                    <a href="https://wa.link/131xdl" class="showcase-title" data-filter="women">Womens Handbag</a>
                   </h3>
               
                   <div class="showcase-rating">
@@ -2856,7 +2861,7 @@
               
               </div>
 
-              <div class="showcase">
+              <div class="showcase" data-filter="women">
               
                 <div class="showcase-banner">
                   <img src="./assets/images/products/bag-1.3.jpg" alt="Mens Winter Leathers Jackets" class="product-img default"
@@ -2888,7 +2893,7 @@
                   <a href="https://wa.link/131xdl" class="showcase-category">Hand Bag</a>
               
                   <h3>
-                    <a href="https://wa.link/131xdl" class="showcase-title">Medium Tote Bag</a>
+                    <a href="https://wa.link/131xdl" class="showcase-title" data-filter="women">Medium Tote Bag</a>
                   </h3>
               
                   <div class="showcase-rating">
@@ -2909,7 +2914,7 @@
               
               </div>
 
-              <div class="showcase">
+              <div class="showcase" data-category="women">
               
                 <div class="showcase-banner">
                   <img src="./assets/images/products/necklace-0.1-removebg-preview.png" alt="Jewellery" class="product-img default"
@@ -2943,7 +2948,7 @@
                   <a href="https://wa.link/131xdl" class="showcase-category">Jewelry Set</a>
               
                   <h3>
-                    <a href="https://wa.link/131xdl" class="showcase-title">Butterfly Necklace</a>
+                    <a href="https://wa.link/131xdl" class="showcase-title" data-filter="women">Butterfly Necklace</a>
                   </h3>
               
                   <div class="showcase-rating">
@@ -3017,7 +3022,7 @@
               
               </div>
 
-              <div class="showcase">
+              <div class="showcase" data-filter="men">
               
                 <div class="showcase-banner">
                   <img src="./assets/images/products/shorts-1.jpg" alt="Better Basics Terry Sweatshorts"
@@ -3050,7 +3055,7 @@
                   <a href="https://wa.link/131xdl" class="showcase-category">Shorts</a>
               
                   <h3>
-                    <a href="https://wa.link/131xdl" class="showcase-title">Better Basics Terry Sweatshorts</a>
+                    <a href="https://wa.link/131xdl" class="showcase-title" data-filter="men">Better Basics Terry Sweatshorts</a>
                   </h3>
               
                   <div class="showcase-rating">
@@ -3071,7 +3076,7 @@
               
               </div>
 
-                <div class="showcase">
+                <div class="showcase" data-filter="men">
               
                 <div class="showcase-banner">
                   <img src="./assets/images/products/shirt-3-removebg-preview.png" alt="Better designed Polo shirt"
@@ -3105,7 +3110,7 @@
                   <a href="https://wa.link/131xdl" class="showcase-category">Polo</a>
               
                   <h3>
-                    <a href="https://wa.link/131xdl" class="showcase-title">Better designed Polo shirt</a>
+                    <a href="https://wa.link/131xdl" class="showcase-title" data-filter="men">Better designed Polo shirt</a>
                   </h3>
               
                   <div class="showcase-rating">
@@ -3625,8 +3630,7 @@
             </div>
 
             <address class="content">
-              419 State 414 Rte
-              Beaver Dams, New York(NY), 14812, USA
+              Gongola, Wukari,Taraba State, Nigeria
             </address>
           </li>
 
@@ -3635,7 +3639,7 @@
               <ion-icon name="call-outline"></ion-icon>
             </div>
 
-            <a href="tel:+8105876172" class="footer-nav-link">(234) 8105-876 172</a>
+            <a href="tel:+8105876172" class="footer-nav-link">(+234) 810 587 6172</a>
           </li>
 
           <li class="footer-nav-item flex">
@@ -3664,7 +3668,7 @@
               </li>
 
               <li class="footer-nav-item">
-                <a href="https://wa.link/zbve1o" class="footer-nav-link">
+                <a href="https://wa.link/131xdl" class="footer-nav-link">
                   <ion-icon name="logo-whatsapp"></ion-icon>
                 </a>
               </li>
@@ -3697,7 +3701,7 @@
         <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
 
         <p class="copyright">
-          Copyright &copy; <a href="#">CEO Arjay</a> all rights reserved.
+          Copyright &copy; 2025  <a href="#">CEO_Arjay</a> all rights reserved.
         </p>
 
       </div>
@@ -3705,11 +3709,6 @@
     </div>
 
   </footer>
-
-
-
-
-
 
   <!--
     - custom js link
@@ -3722,5 +3721,132 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+
+<!-- 
+DO NOT EDIT THIS CODE BELOW EVEN THOUGH YOU THINK YOU KNOW WHAT YOU ARE DOING!
+Clicking a heart on a product (desktop or mobile) will add/remove it from the wishlist.
+Clicking the heart in the header or mobile nav will open the wishlist modal.
+> -->
+<!-- NEW WISHLIST MODAL (newsletter style) -->
+<div id="wishlist-modal" class="modal" style="display:none;">
+  <div class="modal-close-overlay" onclick="document.getElementById('wishlist-modal').style.display='none'"></div>
+  <div class="modal-content">
+    <button class="modal-close-btn" onclick="document.getElementById('wishlist-modal').style.display='none'">
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+    <div class="newsletter">
+      <div class="newsletter-header">
+        <h3 class="newsletter-title">Your Wishlist</h3>
+        <p class="newsletter-desc">Products you have added to your wishlist:</p>
+      </div>
+      <ul id="wishlist-list" style="margin-bottom: 1em;"></ul>
+      <button class="btn-newsletter" onclick="document.getElementById('wishlist-modal').style.display='none'">Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+
+// Category filtering for both desktop and mobile
+document.querySelectorAll('.category-link').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const filter = link.getAttribute('data-filter');
+    document.querySelectorAll('.showcase').forEach(function(product) {
+      if (filter === 'all' || product.getAttribute('data-category') === filter) {
+        product.style.display = '';
+      } else {
+        product.style.display = 'none';
+      }
+    });
+  });
+});
+
+
+    // Listen for clicks on category links
+  document.querySelectorAll('.category-link').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const filter = link.getAttribute('data-filter');
+      document.querySelectorAll('.showcase').forEach(function(product) {
+        if (filter === 'all' || product.getAttribute('data-category') === filter) {
+          product.style.display = '';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    });
+  });
+
+
+
+
+
+
+
+  // Store wishlist items
+  let wishlist = [];
+
+  // Helper: get product info from DOM
+  function getProductInfo(btn) {
+    const showcase = btn.closest('.showcase');
+    if (!showcase) return null;
+    const title = showcase.querySelector('.showcase-title')?.innerText || 'No title';
+    const img = showcase.querySelector('.product-img.default')?.src || '';
+    return { title, img };
+  }
+
+  // Handle heart click on product cards (add/remove wishlist)
+  document.querySelectorAll('.product-main .showcase-actions .btn-action').forEach(function(btn) {
+    const icon = btn.querySelector('ion-icon');
+    if (icon && icon.getAttribute('name').includes('heart')) {
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation(); // Prevent bubbling to parent
+        const isActive = icon.getAttribute('name') === 'heart';
+        icon.setAttribute('name', isActive ? 'heart-outline' : 'heart');
+        icon.style.color = isActive ? '' : 'red';
+
+        // Get product info
+        const info = getProductInfo(btn);
+
+        // Add/remove from wishlist
+        if (!isActive && info) {
+          if (!wishlist.some(item => item.title === info.title)) {
+            wishlist.push(info);
+          }
+        } else if (isActive && info) {
+          wishlist = wishlist.filter(item => item.title !== info.title);
+        }
+
+        // Update global wishlist count
+        document.querySelectorAll('.action-btn ion-icon[name*="heart"] ~ .count').forEach(function(span) {
+          span.textContent = wishlist.length;
+        });
+      });
+    }
+  });
+
+  // Show wishlist modal when header or mobile nav heart icon is clicked
+  document.querySelectorAll('.header-user-actions .action-btn, .mobile-bottom-navigation .action-btn').forEach(function(btn) {
+    const icon = btn.querySelector('ion-icon[name*="heart"]');
+    if (icon) {
+      btn.addEventListener('click', function(e) {
+        // Only open modal, do not add/remove products
+        const modal = document.getElementById('wishlist-modal');
+        const list = document.getElementById('wishlist-list');
+        list.innerHTML = '';
+        if (wishlist.length === 0) {
+          list.innerHTML = '<li>No items in wishlist.</li>';
+        } else {
+          wishlist.forEach(function(item) {
+            list.innerHTML += `<li><img src="${item.img}" style="width:40px;height:40px;object-fit:cover;margin-right:10px;">${item.title}</li>`;
+          });
+        }
+        modal.style.display = 'block';
+        e.stopPropagation();
+      });
+    }
+  });
+</script>
 </body>
 </html>
